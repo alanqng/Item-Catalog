@@ -8,7 +8,7 @@ google_blueprint = make_google_blueprint(client_id='35189606116-d1pge95126e7vmll
 
 app = Flask(__name__)
 app.register_blueprint(google_blueprint, url_prefix='/login')
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///items.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///items.db'
 app.config['SECRET_KEY'] = 'thisissupersecret'
 
 db = SQLAlchemy(app)
