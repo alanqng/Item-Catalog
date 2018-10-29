@@ -1,4 +1,4 @@
-#!/usr/bin/python3git status
+#!/usr/bin/python3
 
 from app import db
 
