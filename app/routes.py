@@ -14,4 +14,7 @@ def login():
     resp = google.get("/oauth2/v2/userinfo")
     assert resp.ok, resp.text
     return "You are {email} on Google".format(email=resp.json()["email"])
-    
+
+@app.route('/googlelog')
+def googlelog():
+    return render_template('login.html')

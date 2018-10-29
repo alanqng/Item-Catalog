@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="35189606116-d1pge95126e7vmllgvc69v8ihmr5p9cl.apps.googleusercontent.com">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>    
+    <style>
+        img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='btn_google_signin_light_focus_web@2x') }}" alt=""></a>
+</body>
+</html>
